@@ -48,17 +48,10 @@ What are possible limitations or problems with this data?   (at least 200 words)
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!).
 
-- Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
+These 6 charts show a trend over time specifically years between 1990 to 2016. I included the chart to visualize the overall trend of prisoner population varying by their race. A pattern that is consistent in all the charts is that there has been a decrease in incarceration overall. It seems like Black and Latinx are the most prominent races of the prisoners in Los Angeles California with White population coming next with very little AAPI and native American prisoners. This pattern we see can be used to infer a possible correlation between incarceration and the race of the criminals.
 
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
 
 ```{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
@@ -67,11 +60,9 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). 
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+For my variable comparison chart, I compared the two continuous variables black prisoner population and white prisoner population as of year 2016 which is the most recent valid data this dataset provides. I chose to visualize and compare these variables because it is one of the most dominant race in the US which means that it will be relevant data for most people. I also grouped these continuous data points with the urbanicity of the county with 4 categories: rural, small/mid, suburban, urban. It is clear that there is a positive correlation between black prisoners and white prisoners as when the number of black prisoners increase, the number of white prisoners increase as well. Additionally, wee can also see that black prisoner population is almost twice the white prisoner population in most data points getting more distant as the urbancity becomes more urban.
 
 ```{r, echo = FALSE, code = readLines("chart2_example.R")}
 ```
@@ -80,9 +71,12 @@ The second chart that you will create and include will show how two different (c
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
+The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!)
 
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
+```{r, echo = FALSE, code = readLines("map_example.R")}
+```
+
+For the visualization of my data, I chose to visualize the black prisoner population across the United States. I decided to do this because this visualization could potentially shed a light on if some convictions were made from the appearance of an individual than their actions. According to the map I generated, the overall pattern is that there are a lot of black prisoners near the East coast and also in California and Texas. From the color of the state, Texas, Florida, and California seems to be the states with the most number of black prisoners. In contrast, the west and midwest regions of the U.S seems to be the region with the least number of black prisoners. 
+
+
 
